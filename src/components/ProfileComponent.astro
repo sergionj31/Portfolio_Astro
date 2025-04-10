@@ -30,58 +30,47 @@ import CapacityComponent from "./CapacityComponent.astro"
         </section>
 
         <section class="mt-32">
-            <div class="flex flex-wrap gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Primera fila: Languages y Frameworks -->
-                <div class="flex w-full gap-16">
-                    <div id="Languages" class="mt-8 basis-1/2">
-                        <h1 class="text-3xl">Lenguajes</h1>
-
-                        <CapacityComponent title="HTML" width={100} />
-                        <CapacityComponent title="CSS" width={100} />
-                        <CapacityComponent title="Python" width={80} />
-                        <CapacityComponent title="JavaScript" width={70} />
-                        <CapacityComponent title="R" width={60} />
-                    </div>
-        
-                    <div id="Frameworks" class="mt-8 basis-1/2">
-                        <h1 class="text-3xl">Frameworks</h1>
-
-                        <CapacityComponent title="Astro" width={70} />
-                        <CapacityComponent title="Django" width={80} />  
-                        <CapacityComponent title="Bootstrap" width={65} />
-                        <CapacityComponent title="Tailwind" width={60} />
-                        <CapacityComponent title="Flask" width={50} />
-                        <CapacityComponent title="React [learning...]" width={25} />
-                    </div>
+                <div id="Languages" class="mt-8">
+                    <h1 class="text-3xl">Lenguajes</h1>
+                    <CapacityComponent title="HTML" width={100} />
+                    <CapacityComponent title="CSS" width={100} />
+                    <CapacityComponent title="Python" width={80} />
+                    <CapacityComponent title="JavaScript" width={70} />
+                    <CapacityComponent title="R" width={60} />
                 </div>
-        
+
+                <div id="Frameworks" class="mt-8">
+                    <h1 class="text-3xl">Frameworks</h1>
+                    <CapacityComponent title="Astro" width={70} />
+                    <CapacityComponent title="Django" width={80} />
+                    <CapacityComponent title="Bootstrap" width={65} />
+                    <CapacityComponent title="Tailwind" width={60} />
+                    <CapacityComponent title="Flask" width={50} />
+                    <CapacityComponent title="React [learning...]" width={25} />
+                </div>
+
                 <!-- Segunda fila: BBDD y Big Data -->
-                <div class="flex w-full gap-16">
-                    <div id="BBDD" class="mt-8 basis-1/2">
-                        <h1 class="text-3xl">BBDD</h1>
-
-                        <CapacityComponent title="MySQL" width={65} />
-                        <CapacityComponent title="MongoDB" width={60} />
-                    </div>
-        
-                    <div id="Big Data" class="mt-8 basis-1/2">
-                        <h1 class="text-3xl">Big Data</h1>
-
-                        <CapacityComponent title="HDFS" width={70} />
-                        <CapacityComponent title="Hadoop" width={60} />
-                        <CapacityComponent title="Spark" width={50} />
-                    </div>
+                <div id="BBDD" class="mt-8">
+                    <h1 class="text-3xl">BBDD</h1>
+                    <CapacityComponent title="MySQL" width={65} />
+                    <CapacityComponent title="MongoDB" width={60} />
                 </div>
-        
-                <!-- Tercera fila: IA -->
-                <div class="flex w-full gap-16">
-                    <div id="IA" class="mt-8 basis-1/2">
-                        <h1 class="text-3xl">IA</h1>
 
-                        <CapacityComponent title="Redes neuronales" width={50} />
-                        <CapacityComponent title="Regresión lineal" width={40} />
-                        <CapacityComponent title="Regresión logística" width={40} />
-                    </div>
+                <div id="Big Data" class="mt-8">
+                    <h1 class="text-3xl">Big Data</h1>
+                    <CapacityComponent title="HDFS" width={70} />
+                    <CapacityComponent title="Hadoop" width={60} />
+                    <CapacityComponent title="Spark" width={50} />
+                </div>
+
+                <!-- Tercera fila: IA -->
+                <div id="IA" class="mt-8">
+                    <h1 class="text-3xl">IA</h1>
+                    <CapacityComponent title="Redes neuronales" width={50} />
+                    <CapacityComponent title="Regresión lineal" width={40} />
+                    <CapacityComponent title="Regresión logística" width={40} />
                 </div>
             </div>
         </section>
