@@ -1,0 +1,9 @@
+@import "tailwindcss";
+  
+.flex-parent {
+    @apply mt-4;
+}
+
+.flex-parent > div {
+    @apply flex mt-2;
+}

@@ -1,0 +1,36 @@
+---
+// Importación innecesaria eliminada
+---
+
+<div class="p-8">
+    <h1 class="text-4xl font-semibold mb-4">Correo:</h1>
+    
+    <div class="flex items-center gap-4">
+        <!-- Input con label -->
+        <label for="email-input" class="sr-only">Correo electrónico</label>
+        <input
+            id="email-input"
+            type="text"
+            value="sergio.navarro@example.com"
+            readonly
+            size="24"
+            class="p-2 border rounded-lg bg-gray-700 text-gray-500 focus:outline-none"
+        />
+
+        <!-- Botón de copiar -->
+        <button
+            id="copy-button"
+            type="button"
+            class="p-2 bg-slate-800 text-gray-400 rounded-lg transition-all duration-200 ease-in-out hover:bg-slate-900 hover:cursor-pointer active:scale-95 focus:outline-none focus:ring focus:ring-slate-700"
+        >
+            Copiar
+        </button>
+    </div>
+
+    <p id="copy-success" class="text-green-600 mt-2 opacity-0 transition-opacity duration-300" aria-live="polite">
+        ¡Copiado!
+    </p>
+</div>
+
+<script src="/scripts/copyToClipboard.js" defer></script>
+

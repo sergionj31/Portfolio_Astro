@@ -1,0 +1,20 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+}
+
+const { title, description, image, link } = Astro.props;
+---
+
+<a style="text-decoration: none; font-size: large;" href={link}>
+    <div class="p-10 mx-auto text-white relative rounded-xl max-w-200 md:lg:min-h-152 max-h-200 flex flex-col transition-transform duration-300 ease-in-out bg-slate-800 hover:scale-102 hover:shadow-lg active:scale-95 active:rotate-1" style="top: -200px;">
+        <div>
+            <h1 class="text-3xl mb-12">{title}</h1>
+            <p class="mb-3">{description}</p>
+        </div>
+        <img src={image} class="mt-auto mx-auto rounded-xl shadow-xl" style="filter: brightness(0.9);"/>
+    </div>
+</a>
