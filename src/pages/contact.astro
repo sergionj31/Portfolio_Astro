@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+import ContactComponent from '../components/ContactComponent.astro';
+---
+
+<Layout>
+	<div class="relative text-white h-screen flex justify-around gap-84 bg-[url('/img/arbol.jpg')] bg-cover bg-center">
+
+		<!-- Gradiente de transición hacia el fondo de la siguiente sección -->
+		<div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>
+	
+		<div class="relative mt-64 ml-4 md:ml-0">
+			<h1 class="text-7xl font-bold mb-6">Mi Contacto</h1>
+		</div>
+
+		<div></div>
+	</div>
+
+	<div class="container mx-auto text-white" style="position: relative; top: -200px;"><ContactComponent /></div>
+</Layout>
