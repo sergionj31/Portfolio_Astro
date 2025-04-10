@@ -18,8 +18,8 @@ import "../styles/Profile.css"
 
 <!-- Sección inferior con el mismo color del gradiente -->
 <div class="p-10 bg-gray-900 text-white">
-    <div class="container mx-auto text-center">
-        <section>
+    <div class="container mx-auto">
+        <section class="text-center">
             <img src="/img/perfil.jpg" class="mx-auto rounded-xl shadow-xl"/>
             <h1 class="text-2xl mt-12">Hola, mi nombre es Sergio (21 años), encantado de conocerte.</h1>
             <h1 class="text-2xl">Soy un desarrollador Full Stack con experiencia en desarrollo de IA y manejo del Big Data.</h1>
@@ -28,54 +28,142 @@ import "../styles/Profile.css"
             <h1 class="text-2xl">Algunas de mis capacidades como desarrollador:</h1>
         </section>
 
-        <section class="mt-22">
-            <div>
-                <div class="flex-parent">
-                    <div>JavaScipt</div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+        <section class="mt-32">
+            <div class="flex flex-wrap gap-8">
+                <!-- Primera fila: Languages y Frameworks -->
+                <div class="flex w-full gap-16">
+                    <div id="Languages" class="mt-8 basis-1/2">
+                        <h1 class="text-3xl">Lenguajes</h1>
+                        <div class="flex-parent">
+                            <div>HTML</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>CSS</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>Python</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>JavaScipt</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>R</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="Frameworks" class="mt-8 basis-1/2">
+                        <h1 class="text-3xl">Frameworks</h1>
+                        <div class="flex-parent">
+                            <div>Astro</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>Django</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>Bootstrap</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>Tailwind</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>React [learning...]</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 25%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="flex-parent">
-                    <div>Python</div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+        
+                <!-- Segunda fila: BBDD y Big Data -->
+                <div class="flex w-full gap-16">
+                    <div id="BBDD" class="mt-8 basis-1/2">
+                        <h1 class="text-3xl">BBDD</h1>
+                        <div class="flex-parent">
+                            <div>MySQL</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>MongoDB</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="Big Data" class="mt-8 basis-1/2">
+                        <h1 class="text-3xl">Big Data</h1>
+                        <div class="flex-parent">
+                            <div>HDFS</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>Hadoop</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>Spark</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="flex-parent">
-                    <div>Tailwind</div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
-                    </div>
-                </div>
-
-                <div class="flex-parent">
-                    <div>Astro</div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
-                    </div>
-                </div>
-
-                <div class="flex-parent">
-                    <div>Django</div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 50%"></div>
-                    </div>
-                </div>
-
-                <div class="flex-parent">
-                    <div>HTML</div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
-                    </div>
-                </div>
-
-                <div class="flex-parent">
-                    <div>CSS</div>
-                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+        
+                <!-- Tercera fila: IA -->
+                <div class="flex w-full gap-16">
+                    <div id="IA" class="mt-8 basis-1/2">
+                        <h1 class="text-3xl">IA</h1>
+                        <div class="flex-parent">
+                            <div>Redes neuronales</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 55%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>Regresión lineal</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="flex-parent">
+                            <div>Regresión logística</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
