@@ -20,17 +20,80 @@ import CapacityComponent from "./CapacityComponent.astro"
 <!-- Sección inferior con el mismo color del gradiente -->
 <div class="p-10 bg-gray-900 text-white">
     <div class="container mx-auto">
-        <section class="text-center">
-            <img src="/img/perfil.jpg" class="mx-auto rounded-xl shadow-xl"/>
-            <h1 class="text-2xl mt-12">Hola, mi nombre es Sergio (21 años), encantado de conocerte.</h1>
-            <h1 class="text-2xl">Soy un desarrollador Full Stack con experiencia en desarrollo de IA y manejo del Big Data.</h1>
-            <h1 class="text-2xl">He trabajado mucho en desarrollo front-end y en la fabricación de cuadros de mando en PowerBI.</h1>
-            <br>
-            <h1 class="text-2xl">Algunas de mis capacidades como desarrollador:</h1>
-        </section>
+        <section class="mb-24">
+            <div class="mx-auto flex flex-col gap-8 mb-12 max-w-4xl">
+                <div class="flex flex-col lg:flex-row gap-8 mb-12 max-w-210">
+                    <img src="/img/perfil.jpg" class="rounded-xl shadow-xl w-48 h-48 lg:w-64 lg:h-64" />
+    
+                    <h1 class=" lg:block text-xl mt-4">
+                        Hola, mi nombre es <b class="text-blue-600">Sergio</b> (21 años), encantado de conocerte. 
+                        Soy un desarrollador <b class="text-blue-600">Full-Stack</b> con experiencia en  
+                        <b class="text-blue-600">desarrollo de IA</b> y <b class="text-blue-600">manejo del Big Data</b>
+                        He trabajado mucho en desarrollo front-end y en la fabricación de cuadros de mando en PowerBI.
+                    </h1>
+                </div>
 
-        <section class="mt-32">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Educación -->
+                    <div class="mb-12">
+                        <h1 class="title">Educación:</h1>
+                        <ul class="list-none">
+                            <li class="title-2">Curso de especialización en IA y Big Data <br> 
+                                <p class="subtitle">IES Chaves Nogales (2024-2025)</p>
+                            </li>
+                            <li class="title-2">Grado Superior en Desarrollo de aplicaciones Web <br> 
+                                <p class="subtitle">IES Martínez Montañés (2022-2024)</p>
+                            </li>
+                            <li class="title-2">Bachillerato de ciencias tecnológico <br> 
+                                <p class="subtitle">IES Chaves Nogales (2020-2022)</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Idiomas -->
+                    <div class="mb-12">
+                        <h1 class="title">Idiomas:</h1>
+                        <ul class="list-none">
+                            <li class="title-2">Español <br> 
+                                <p class="subtitle">Nativo</p>
+                            </li>
+                            <li class="title-2">Inglés <br> 
+                                <p class="subtitle">Nivel medio B2 (Certificado Cambridge)</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Experiencia laboral -->
+                    <div class="mb-12">
+                        <h1 class="title">Experiencia laboral:</h1>
+                        <ul class="list-none">
+                            <li class="title-2">Desarrollador Full Stack <br> 
+                                <p class="subtitle">Proxya (2023 - Presente)</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Formación complementaria -->
+                    <div class="mb-12">
+                        <h1 class="title">Formación complementaria:</h1>
+                        <ul class="list-none">
+                            <li class="title-2">Curso de Python3 <br> 
+                                <p class="subtitle">OpenWebinars</p>
+                            </li>
+                            <li class="title-2">Curso de PowerBI <br> 
+                                <p class="subtitle">Udemy</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <h1 class="text-2xl text-center">Algunas de mis capacidades como desarrollador:</h1>
+        <!-- <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700"> -->
+
+        <section class="mt-24 mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <!-- Primera fila: Languages y Frameworks -->
                 <div id="Languages" class="mt-8">
                     <h1 class="text-3xl">Lenguajes</h1>
@@ -62,6 +125,7 @@ import CapacityComponent from "./CapacityComponent.astro"
                     <h1 class="text-3xl">Big Data</h1>
                     <CapacityComponent title="HDFS" width={70} />
                     <CapacityComponent title="Hadoop" width={60} />
+                    <CapacityComponent title="ELK" width={45} />
                     <CapacityComponent title="Spark" width={50} />
                 </div>
 

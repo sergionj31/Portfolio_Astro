@@ -7,3 +7,15 @@
 .flex-parent > div {
     @apply flex mt-2;
 }
+
+.subtitle {
+    @apply text-sm text-gray-400;
+}
+
+.title {
+    @apply text-3xl mb-4 font-medium;
+}
+
+.title-2 {
+    @apply text-xl mb-4;
+}
