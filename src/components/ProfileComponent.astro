@@ -22,15 +22,25 @@ import CapacityComponent from "./CapacityComponent.astro"
     <div class="container mx-auto">
         <section class="mb-24">
             <div class="mx-auto flex flex-col gap-8 mb-12 max-w-4xl">
-                <div class="flex flex-col lg:flex-row gap-8 mb-12 max-w-210">
+                <div class="flex flex-col lg:flex-row gap-8 max-w-210">
                     <img src="/img/perfil.jpg" class="rounded-xl shadow-xl w-48 h-48 lg:w-64 lg:h-64" />
-    
+                    
                     <h1 class=" lg:block text-xl mt-4">
-                        Hola, mi nombre es <b class="text-blue-600">Sergio</b> (21 años), encantado de conocerte. 
-                        Soy un desarrollador <b class="text-blue-600">Full-Stack</b> con experiencia en  
-                        <b class="text-blue-600">desarrollo de IA</b> y <b class="text-blue-600">manejo del Big Data</b>
-                        He trabajado mucho en desarrollo front-end y en la fabricación de cuadros de mando en PowerBI.
+                        <p>
+                            Hola, mi nombre es <b class="text-blue-600">Sergio</b> (21 años), encantado de conocerte. 
+                            Soy un desarrollador <b class="text-blue-600">Full-Stack</b> con experiencia en  
+                            <b class="text-blue-600">desarrollo de IA</b> y <b class="text-blue-600">manejo del Big Data</b>
+                            He trabajado mucho en desarrollo front-end y en la fabricación de cuadros de mando en PowerBI.
+                        </p>
                     </h1>
+                </div>
+
+                <div class="mb-12">
+                    <button
+                        id="download-button"
+                        type="button"
+                        class="p-2 bg-slate-800 text-gray-400 rounded-lg transition-all duration-200 ease-in-out hover:bg-slate-900 hover:cursor-pointer active:scale-95 focus:outline-none focus:ring focus:ring-slate-700"
+                    ><a href="/pdf/Europass_Sergio_Navarro_CV.pdf" download="Europass_Sergio_Navarro_CV.pdf">Descargar CV</a></button>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
